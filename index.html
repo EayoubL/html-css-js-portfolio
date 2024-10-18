@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayoub El Azamy Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ayoub El Azamy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Compétences</a></li>
+          <li><a href="#exp">Expérience</a></li>
+          <li><a href="#projects">Certificats</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ayoub El Azamy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+          <li><a href="#exp" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Certificats</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Profile-picture.JPG" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis </p>
+        <h1 class="title">Ayoub El Azamy</h1>
+        <p class="section__text__p2">Ingénieur Agronome</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV - El Azamy Ayoub - ingénieur agronome.pdf')"
+          >
+            Télécharger CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/ayoub-el-azamy/'"
+          />
+          <img
+            src="./assets/email.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='mailto:elazamyayoub@gmail.com'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1"> </p>
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/photo_CV2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Lauréat de</h3>
+              <strong>l'Institut Agronomique et Vétérinaire Hassan II</strong> <br />Département des Ressources Naturelles et Environnement</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/diplôme-pic.png"
+                alt="Education icon"
+                class="icon"
+                style="background-color:rgb(255, 255, 255);"
+              />
+              <!-- <h3>Diplôme</h3> -->
+              <h3>Ingénieur d'état en Sciences Agronomiques</h3> <br>spécialisé en <strong>Écologie et Management des Écosystèmes Naturels</strong></h3>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;color: black;">
+              Je suis un ingénieur agronome et écologiste passionné par l’équilibre entre le développement humain et la préservation des écosystèmes naturels. Curieux et engagé,
+               je m’efforce d'apprendre en continu et de contribuer à des solutions durables. Mon ambition est d'évoluer en tant qu’expert en gestion environnementale et biodiversité, en participant à des projets ayant un impact positif et durable sur notre planète.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Voici mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Langues</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Arabe</h3>
+                  <p>Maternelle</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Français</h3>
+                  <p>Niveau C1</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Anglais</h3>
+                  <p>Niveau C1</p>
+                </div>
+              </article>
+            </div>
+            <br/>
+            <h2 class="experience-sub-title">Qualités transversales</h2> 
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Polyvalence</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sens de l'initiative</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Esprit d'équipe</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Logiciels</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/qgis-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>QGis</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/GIS_logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ArcGis</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/earth-engine-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Earth Engine</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/autocad-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AutoCad</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/envi-logo_.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ENVI</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/rstudio-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RStudio</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postgresql-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Compétences clés</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Réglementation et études</h3>
+                  <p>Études d’impact, études d’aménagement des 
+                    ressources naturelles</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spécialités naturalistes</h3>
+                  <p>Botanique, phytosociologie</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Gestion de projets</h3>
+                  <p>Organisation, rigueur, suivi du projet</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sensibilisation</h3>
+                  <p> Tenue de réunion, élaboration d’outils de communications divers, goût du contact</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#exp'"
+      />
+    </section>
+    <section id="exp">
+      <p class="section__text__p1"> Explorer mon </p>
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+  
+            </div>
+            <img src="assets/CAP.PNG" class="cap"/>
+            <h2>
+              Stage : Chargé d'études en biodiversité
+            </h2>
+            <h3 style="color: gray;">
+              Avril 2024-Août 2024
+            </h3>
+            <br/>
+            <p>
+  
+              <div class="par">
+              
+               <strong>En tant que chargé d’études en biodiversité chez Biotope (BIB),
+                 j'ai eu l'opportunité de participer à une large variété de projets,
+                  renforçant mon expertise en gestion écologique et environnementale.
+                   Mon rôle couvrait un large évantail des phases du processus,
+                    de la planification préliminaire à la conception des mesures de mitigation écologique. Parmi les projets auxquels j'ai participé, on peut citer : </strong>
+              
+              <br/>
+              <br/>
+              <div class="articles-exp">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Énergies renouvelables (EnR)</h3><br>
+                    <p> <strong style="color: black;"> Xlinks Morocco-UK Power Project</strong> (transport d’énergie solaire et éolienne entre le Maroc et le Royaume-Uni).</p>
+                    <br>
+                    <img src="assets/Xlinks-logo.png" style="display: flex;
+                    justify-content: center; 
+                    align-items: center;
+                    width: 30vh;     
+                    height: 20vh;     
+                    margin-left: 3vh;   
+                    margin-top: 0vh;"/>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Infrastructures de base</h3><br>
+                    <p> Construction de la nouvelle autoroute continentale Rabat-Casablanca.</p>
+                    <br>
+                    <img src="assets/LOGO  - Ministère.png" style="display: flex;
+                    justify-content: center; 
+                    align-items: center;
+                    width: 20vh;     
+                    height: 20vh;     
+                    margin-left: 10vh;   
+                    margin-top: 3.5vh;"/>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3 style="white-space: nowrap;">Développement agro-écologique</h3> <br>
+                    <p> Projet du <strong style="color: black;"> CEPF </strong> pour améliorer l’activité pastorale dans le Parc National de Toubkal (Maroc).</p>
+                  <br>
+                  <img src="assets/cepf-logo.png" style="display: flex;
+                  justify-content: center; 
+                  align-items: center;
+                  width: 35vh;     
+                  height: 15vh;     
+                  margin-left: 3vh;   
+                  margin-top: 5vh;"/>
+                  </div>
+                </article>
+              </div>
+              <br/>
+              
+              En participant à plusieurs étapes des études, 
+              j'ai pu acquérir une expérience concrète et approfondie dans le domaine de la biodiversité.
+               Cette expérience m’a notamment permis de maîtriser les réglementations nationales et internationales (CITES, IUCN, CDB) 
+               et les exigences des bailleurs de fonds internationaux (Banque Mondiale, IFC) en matière de biodiversité. 
+               J’ai également acquis une grande autonomie dans la conduite de missions sur le terrain et développé des compétences en évaluation
+                environnementale, notamment en ce qui concerne la gestion des impacts cumulés et l’application de la méthode <strong>ERC</strong>.
+              <br/>
+              <br/>
+              
+              Mes missions ne se limitaient pas à la réalisation d'études techniques.
+               J'ai également développé de solides compétences en communication scientifique, 
+               me permettant de vulgariser des concepts scientifiques et de rendre compte de mes travaux auprès de publics variés. 
+               J'ai ainsi rédigé de nombreux rapports et présentations, tout en adaptant le discours aux différents publics.
+               <br/>             
+               <br/>             
+               </div>               
+          </div>
+  
+        </div>
+        
+        
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+  
+            </div>
+            <h2>
+  
+            
+            
+  
+            </h2>
+            <br/>
+            <p>
+            <div class="par">
+              Toutefois, au-delà de l’apprentissage, j’ai également apporté une valeur ajoutée significative à l’équipe BIB,
+               grâce à plusieurs atouts : 
+               <br/>
+               <br/>
+              
+               <img
+                    src="./assets/tree1_logo.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+               <strong> Expertise en écosystèmes et flore du Maroc :</strong>
+               J’ai apporté une compréhension approfondie des dynamiques écologiques locales, 
+               ainsi qu’une bonne connaissance des enjeux y associés.
+               <br/>
+              
+               <img
+                    src="./assets/GIS_logo.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+               <strong> Compétences avancées en cartographie et télédétection :</strong>
+               J’ai contribué à l'analyse spatiale avec des classifications supervisée et non supervisée,
+                ainsi que la photo-interprétation de données géospatiales, ce qui été un atout précieux 
+               <br/>
+              
+               <img
+                    src="./assets/english_logo.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+               <strong> Facilitation des échanges avec des partenaires internationaux :</strong>
+               Mon niveau en anglais a permis de fluidifier la communication avec les parties prenantes internationales 
+               et de participer à la traduction de documents techniques, garantissant la clarté des échanges et l’harmonisation des livrables.            
+              </div>
+            
+          </div>
+        </div>  
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+  
+              <div class="content-container">
+              <img src="assets/iav-logo.png" class="logo" alt="IAV Logo" style="width: 40vh;"/>
+              
+              <div class="text-container">
+                <h2>Projet de fin d’études</h2>
+                <h3 style="color: gray;">Mars 2023 - Octobre 2023</h3>
+              </div>
+              <img src="assets/cirad-logo.png" class="logo" alt="CIRAD Logo" style="width: 30vh;"/>
+            </div>
+            <div class="par">
+              <h3 style="text-align: center;"><strong> « Contribution à l’évaluation de la dégradation de la 
+                végétation dans les parcours des deux Communes 
+                territoriales M’semrir et Tilmi »</strong></h3> 
+              </div>
+              <p style="color: black; text-align: justify;">  Dans le cadre du <strong> projet MASSIRE</strong>, visant à fournir aux acteurs locaux des outils pour promouvoir 
+                le développement durable des oasis et des zones arides du Maghreb,
+                 j’ai mené une étude sur la dégradation des parcours pastoraux dans le Haut Atlas oriental,
+                 couvrant les deux communes territoriales de <strong> M’semrir</strong> et <strong>Tilmi</strong>.</p>
+              <p style="color: black; text-align: justify;"> Cette étude visait à <strong> évaluer l'état de la végétation </strong> sur ces parcours, en adoptant une approche qui combine des <strong> indicateurs écologiques </strong> et <strong>des outils de télédétection</strong> pour obtenir une évaluation à la fois qualitative et quantitative de la dégradation.</p>
+              <div><h3> Contributions et résultats du projet </h3></div>
+              <br> 
+               <div><strong> 1) Adoption d'une approche intégrée :</strong>
+               <br>
+               <style>
+                cr {
+                    display: block; /* Change to block to apply margin */
+                    margin: 10px 0; /* Adjust the vertical space as needed */
+                }
+                </style>
+                <cr>
+                <ul>
+                <li><p><strong>Analyse bibliographique :</strong> Analyse des études précédentes sur le pastoralisme et l’écologie de la région.</p></li>
+                <li><p><strong>Relevés floristiques :</strong> Inventaires botaniques, identification des indicateurs biologiques et écologiques de dégradation.</p></li>
+                <li><p><strong>Télédétection :</strong> Utilisation d’images satellites pour suivre l’évolution spatio-temporelle de la végétation.</p></li>
+               </ul>
+              </div>
+               <strong> 2) Production d’un document scientifique de référence :</strong>
+               <p>Ce rapport détaillé,  enrichi de cartes thématiques et de données issues des relevés floristiques, sert de base pour le suivi à long terme et l’élaboration de stratégies de gestion des ressources pastorales.</p> 
+               
+               <strong> 3) Collaboration interdisciplinaire :</strong>
+               <p>J’ai travaillé avec des chercheurs issus de plusieurs disciplines (écologie, agronomie, télédétection),
+                ce qui a permis une compréhension globale du sujet et l’intégration de perspectives complémentaires.</p>            
+              </div>
+              <br>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./assets/Contribution à l’évaluation de la dégradation de la végétation dans les parcours des deux Communes territoriales M’semrir et Tilmi - El Azamy Ayoub.pdf')"
+                >
+                  Télécharger le document
+                </button>
+              </div>
+            
+          </div>
+        </div>  
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+  
+              <div class="content-container">
+                <img src="assets/iav-logo.png" class="logo" alt="IAV Logo" style="width: 40vh;"/>
+                
+                <div class="text-container">
+                  <h2>Stage professionnel</h2>
+                  <h3 style="color: gray;">Juillet 2022 - Août 2022</h3>
+                </div>
+                <img src="assets/anef-logo.png" class="logo" alt="CIRAD Logo" style="width: 30vh;"/>
+              </div>
+            <div class="par">
+              <!-- <h3 style="text-align: center;"><strong> « Contribution à l’évaluation de la dégradation de la 
+                végétation dans les parcours des deux Communes 
+                territoriales M’semrir et Tilmi »</strong></h3> 
+              </div> -->
+              <p style="color: black; text-align: justify;">  Ce stage que j'ai réalisé au sein du Service des Études et de l’Inventaire Forestier National <strong>(SEIFN)</strong>,
+                 relevant de l'Agence Nationale des Eaux et Forêts <strong>(ANEF)</strong> à Rabat, s'est concentré sur l’analyse géospatiale et l’utilisation de Systèmes
+                  d’Information Géographique (SIG) et de la télédétection pour cartographier l’évolution de l'occupation du sol dans le Parc National d’Ifrane.</p>
+              <!-- <p style="color: black; text-align: justify;"> Cette étude visait à <strong> évaluer l'état de la végétation </strong> sur ces parcours, en adoptant une approche qui combine des <strong> indicateurs écologiques </strong> et <strong>des outils de télédétection</strong> pour obtenir une évaluation à la fois qualitative et quantitative de la dégradation.</p> -->
+              <br>
+              <div><h3> Mission principale : Élaboration d’une carte d’évolution</h3></div>
+              <br> 
+               <div><p> L’objectif principal de mon stage était de suivre <strong> les changements de l’occupation du sol </strong> au sein du<strong> parc national d'Ifrane </strong>sur une période de 35 ans (1987-2022).
+                 Pour cela, j'ai utilisé des images satellites Landsat multi-dates et appliqué une classification supervisée par maximum de vraisemblance.
+                </p>
+                </div>
+               <br>
+                 <div class="par"><h3> Méthodes et outils employés </h3></div>
+                 <br>
+                 <ul>
+                <li><p><strong>Google Earth Engine (GEE)</strong> a été mobilisé pour collecter et traiter les images nécessaires à l’étude.</p></li>
+                <li><p><strong>ENVI</strong> pour l'analyse et la classification des images collectées.</p></li>
+                <li><p>J'ai appliqué les indices <strong>NDVI </strong>(Normalized Difference Vegetation Index) et <strong>NDWI</strong> (Normalized Difference Water Index) pour identifier respectivement les zones de végétation et d’eau. Ces indices ont permis d’affiner l’analyse.</p></li>
+                <li><p><strong>QGIS 3.24</strong> a été utilisé pour produire des cartes thématiques et synthétiser les résultats.</p></li>
+                <li><p>À l’aide de<strong> RStudio</strong> j'ai évalué la précision des résultats par le calcul d'une matrice de confusion, obtenant une précision globale de <strong>69,09 %</strong>.</p></li>
+               </ul>
+              </div>
+              <div><h3>Résultats obtenus</h3></div>
+              <br> 
+               <div class="par"><p> L’étude a révélé une augmentation de la couverture forestière de <strong> 10,5 %</strong> au cours des trois dernières décennies,
+                 témoignant des efforts de gestion et de protection. En revanche, les surfaces en eau ont diminué de <strong>210 hectares</strong>,
+                 soulignant l'impact combiné de la pression anthropique et des épisodes de sécheresse que le PNI a subis depuis 1987.</p>
+               </div>        
+              </div>
+            
+          </div>
+        </div>  
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Mes</p>
+      <h1 class="title">Certificats</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/eocollege-logo.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Land in Focus – Basics of Remote Sensing</h2>
+            <div class="par">
+            <p> Land in Focus – Basics of Remote Sensing est un cours d'EO College qui introduit les fondamentaux de la <strong>télédétection</strong>.
+              Il couvre les principes essentiels de l'acquisition et le traitement d'images satellitaires,
+              l'interprétation des données, et l'utilisation d'outils pour analyser les changements terrestres.</p><br>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/EO-College-Certificate_Land-in-Focus-Basics-of-Remote-Sensing_Ayoub_El_Azamy.pdf')"
+              >
+                Télécharger certificat
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/eocollege-logo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Towards Zero Hunger – Agriculture & Livestock</h3>
+            <div class="par">
+              <p> Towards Zero Hunger – Agriculture & Livestock est un cours d'EO College qui explore l'utilisation de la <strong>télédétection</strong> pour soutenir l’agriculture durable et l’élevage.
+                 Il met en lumière l’importance des images satellites et des données géospatiales dans le suivi des cultures,
+                  la gestion des ressources agricoles, et l'amélioration des pratiques d’élevage.</p>
+            </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/EO-College-Certificate_Towards-Zero-Hunger-Agriculture-Livestock_Ayoub_El_Azamy.pdf')"
+              >
+                Télécharger certificat
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/unep-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Nature-based Solutions for Disaster and Climate Resilience</h2>
+            <div class="par">
+              <p> Le cours Nature-based Solutions for Disaster and Climate Resilience proposé par le PNUE (Programme des Nations Unies pour l’Environnement)
+                 explore l'intégration des <strong>solutions fondées sur la nature (SfN)</strong> pour renforcer la résilience face aux <strong>catastrophes </strong>et au <strong>changement climatique</strong>. 
+                 Ce programme offre des connaissances pratiques sur la conception et l’application des SfN dans les politiques environnementales et la gestion des risques.</p>
+            </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/Nature-based Solutions for Disaster and Climate Resilience_Certificate.pdf')"
+              >
+                Télécharger certificat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1"> </p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:elazamyayoub@gmail.com">elazamyayoub@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ayoub-el-azamy/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Compétences</a></li>
+            <li><a href="#exp">Expérience</a></li>
+            <li><a href="#projects">Certificats</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <p>Copyright &#169; 2024 Ayoub El Azamy. All Rights Reserved.</p> -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
